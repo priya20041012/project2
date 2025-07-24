@@ -9,7 +9,7 @@ import Profile from './Components/Pages/Profile';
 import Review from './Components/Pages/Review';
 import Table from './Components/Pages/Table';
 import { BrowserRouter as Router, Routes, Route ,useNavigate} from 'react-router-dom';
-import Loginpage from './components/login';
+// import Loginpage from './components/login';
 import Layout from './Components/Pages/layout';
 
 
@@ -20,13 +20,13 @@ function App() {
   return (
   <Router>
           <Routes>
-          <Route path="/" element={<Loginpage />} />
+          <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/about" element={<About />} />
           <Route path="/profile" element={<Layout><Profile/></Layout>} />         
           <Route path="/review" element={<Review/>} />
-          <Route path="/login" element={<Loginpage/>} />
+          {/* <Route path="/login" element={<Loginpage/>} /> */}
           <Route path="/table" element={<Table/>} />
 
     
