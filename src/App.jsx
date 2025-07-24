@@ -9,10 +9,10 @@ import Profile from './Components/Pages/Profile';
 import Review from './Components/Pages/Review';
 import Table from './Components/Pages/Table';
 import { BrowserRouter as Router, Routes, Route ,useNavigate} from 'react-router-dom';
-import Login from './components/login';
+import Loginpage from './components/login';
 import Layout from './Components/Pages/layout';
 
-// import './App.css'
+
 
 function App() {
   const [count,setCount] =useState(0)
@@ -20,7 +20,7 @@ function App() {
   return (
   <Router>
           <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Loginpage />} />
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/about" element={<About />} />
